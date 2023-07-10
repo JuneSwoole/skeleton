@@ -1,0 +1,28 @@
+{
+    "name": "juneswoole/skeleton",
+    "type": "library",
+    "description": "JuneSwoole skeleton",
+    "keywords": [
+        "framework",
+        "swoole"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "JuneChen",
+            "email": "juneswoole@163.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0.0"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^6.3",
+        "juneswoole/command": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "JuneSwoole\\Skeleton\\": "src/"
+        }
+    }
+}
