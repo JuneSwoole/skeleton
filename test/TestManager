@@ -1,0 +1,14 @@
+<?php
+
+use JuneSwoole\Skeleton\Manager;
+
+defined('BASE_PATH') or define('BASE_PATH', realpath(getcwd()));
+
+require BASE_PATH . '/vendor/autoload.php';
+
+$args = $argv;
+array_shift($args);
+$result = (new Manager())::exec($args);
+if (!empty($result)) {
+    echo $result . "\n";
+}
